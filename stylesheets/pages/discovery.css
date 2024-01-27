@@ -1,0 +1,151 @@
+/* CSS 작성 */
+h1,
+h2,
+h3 {
+  margin: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+#wrap {
+  width: 1020px;
+  margin: 100px auto 48px;
+}
+
+#header {
+  height: 40px;
+  margin-bottom: 48px;
+}
+
+#header a,
+#header img {
+  display: block;
+  width: 176px;
+  height: 40px;
+  font-size: 0px;
+}
+
+#section {
+  width: 1020px;
+  height: 1010px;
+  border: solid 0.1px transparent;
+}
+
+#title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  width: 366px;
+  height: 28px;
+}
+
+#title h2 {
+  display: inline-block;
+  font-size: 24px;
+  color: var(--black);
+}
+
+#title span {
+  color: var(--gray);
+}
+
+#title h3 {
+  display: inline-block;
+  font-size: 16px;
+  color: var(--gray);
+}
+
+#item-list {
+  margin-top: 24px;
+  width: 1020.2px;
+  height: 958px;
+  padding-left: 0px;
+}
+
+.item {
+  border: 1px solid var(--gray);
+  float: left;
+  position: relative;
+  list-style: none;
+}
+
+.item:hover {
+  border: 1px solid var(--blue);
+}
+
+.item a:focus {
+  outline: 1px solid var(--blue);
+}
+
+.button {
+  width: 42px;
+  height: 42px;
+  background-color: var(--black--opacity);
+  color: var(--white);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 248px;
+  left: 20px;
+  transition: background-color, width 0.1s ease;
+}
+
+.item:hover .button::before {
+  content: '구매하기\00a0\00a0\00a0\00a0';
+}
+
+.item:hover .button {
+  background-color: var(--blue);
+  opacity: 1;
+  width: 112px;
+}
+
+.item a:focus .button::before {
+  content: '구매하기\00a0\00a0\00a0\00a0';
+}
+
+.item a:focus .button {
+  background-color: var(--blue);
+  opacity: 1;
+  width: 112px;
+}
+
+.item:nth-child(1),
+.item:nth-child(3),
+.item:nth-child(4),
+.item:nth-child(5),
+.item:nth-child(7),
+.item:nth-child(8) {
+  margin-right: 12px;
+}
+
+.item:nth-child(1),
+.item:nth-child(2),
+.item:nth-child(3),
+.item:nth-child(4),
+.item:nth-child(5),
+.item:nth-child(6) {
+  margin-bottom: 12px;
+}
+
+#item1 img,
+#item2 img,
+#item7 img {
+  width: 502px;
+  height: 310px;
+  padding: 20px 28px;
+}
+
+#item3 img,
+#item4 img,
+#item5 img,
+#item6 img,
+#item8 img,
+#item9 img {
+  width: 244px;
+  height: 310px;
+  padding: 14px 22px;
+}
